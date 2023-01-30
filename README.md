@@ -12,3 +12,15 @@
 [20.406175, "o", "i"]
 [20.727808, "o", "t"]
 [21.314864, "o", "\u001b[?2004l\r\r\n"]
+
+    https://asciinema.org/a/9zEicWaA24mPMkAH16DOhpKyz
+
+This installation of asciinema recorder hasn't been linked to any asciinema.org
+account. All unclaimed recordings (from unknown installations like this one)
+are automatically archived 7 days after upload.
+
+If you want to preserve all recordings made on this machine, connect this
+installation with asciinema.org account by opening the following link:
+
+    https://asciinema.org/connect/04584070-aa8b-497c-acdb-36d08cc4a542
+
