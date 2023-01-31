@@ -24,3 +24,17 @@ installation with asciinema.org account by opening the following link:
 
     https://asciinema.org/connect/04584070-aa8b-497c-acdb-36d08cc4a542
 
+
+View the recording at:
+
+    https://asciinema.org/a/06an2umQGSd6Ox0uROFpY9BRX
+
+This installation of asciinema recorder hasn't been linked to any asciinema.org
+account. All unclaimed recordings (from unknown installations like this one)
+are automatically archived 7 days after upload.
+
+If you want to preserve all recordings made on this machine, connect this
+installation with asciinema.org account by opening the following link:
+
+    https://asciinema.org/connect/04584070-aa8b-497c-acdb-36d08cc4a542
+
