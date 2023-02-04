@@ -38,3 +38,5 @@ installation with asciinema.org account by opening the following link:
 
     https://asciinema.org/connect/04584070-aa8b-497c-acdb-36d08cc4a542
 
+
+https://asciinema.org/a/M3FjSplomqxgF8Lcy5qMxNeyi
