@@ -26,12 +26,13 @@ def brain_progression():
         string[index_num] = '..'
         string = ' '.join(string)
         print(f"Question: {string}")
-        answer = prompt.string('Your answer: ')
-        if answer == str(num):
+        ans = prompt.string('Your answer: ')
+        if ans == str(num):
             print('Correct!')
             index += 1
         else:
-            print(f"'{answer}' is wrong answer ;(. Correct answer were '{num}'.\nLet's try again, {name}!")
+            print(f"'{ans}' is wrong answer ;(. Correct answer were '{num}'.")
+            print(f"Let's try again, {name}!")
             break
         if index > 3:
             print(f"Congratulations, {name}!")

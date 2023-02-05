@@ -24,11 +24,11 @@ def brain_prime():
         if (answer == 'yes' and count == 2) or (answer == 'no' and count != 2):
             print('Correct!')
             index += 1
-        if (count == 2 and answer != 'yes'):
+        elif (count == 2 and answer != 'yes'):
             print(f"'{answer}' is wrong answer ;(. Correct answer was 'yes'.")
             print(f"Let's try again, {name}!")
             break
-        if (count != 2 and answer != 'no'):
+        elif (count != 2 and answer != 'no'):
             print(f"'{answer}' is wrong answer ;(. Correct answer was 'no'.")
             print(f"Let's try again, {name}!")
             break

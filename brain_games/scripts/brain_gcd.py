@@ -17,12 +17,13 @@ def brain_gcd():
         x = randint(1, 100)
         y = randint(1, 100)
         print(f'Question: {x} {y}')
-        answer = prompt.string('Your answer: ')
-        if answer == str(math.gcd(x, y)):
+        ans = prompt.string('Your answer: ')
+        b = math.gcd(x, y)
+        if ans == str(b):
             print('Correct!')
             i += 1
         else:
-            print(f"'{answer}' is wrong answer ;(. Correct answer were '{math.gcd(x, y)}'.")
+            print(f"'{ans}' is wrong answer ;(. Correct answer were '{b}'.")
             print(f"Let's try again, {name}!")
             break
         if i > 3:
