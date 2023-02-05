@@ -7,9 +7,6 @@ from random import randint
 from random import choice
 
 
-import math
-
-
 def brain_progression():
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
@@ -31,8 +28,8 @@ def brain_progression():
         print(f"Question: {string}")
         answer = prompt.string('Your answer: ')
         if answer == str(num):
-             print('Correct!')
-             index += 1
+            print('Correct!')
+            index += 1
         else:
             print(f"'{answer}' is wrong answer ;(. Correct answer were '{num}'.\nLet's try again, {name}!")
             break

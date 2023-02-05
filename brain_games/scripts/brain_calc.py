@@ -14,37 +14,38 @@ def brain_calc():
     print('What is the result of the expression?')
     i = 1
     while i <= 3:
-        x = randint(1,100)
+        x = randint(1, 100)
         y = randint(1, 100)
         znak = choice('+-*')
         print(f'Question: {x} {znak} {y}')
-        answer = prompt.string('Your answer: ')
-        
+        ans = prompt.string('Your answer: ')
         if znak == '+':
-            real = str(x + y)
-            if real == answer:
+            r = str(x + y)
+            if r == ans:
                 print('Correct!')
                 i += 1
             else:
-                print(f"'{answer}' is wrong answer ;(. Correct answer were '{real}'.\nLet's try again, {name}!")
+                print(f"'{ans}' is wrong answer ;(. Correct answer were '{r}'.")
+                print(f"Let's try again, {name}!")
                 break
         if znak == '-':
-            real = str(x - y)
-            if real == answer:
+            r = str(x - y)
+            if r == ans:
                 print('Correct!')
                 i += 1
             else:
-                print(f"'{answer}' is wrong answer ;(. Correct answer were '{real}'.\nLet's try again, {name}!")
+                print(f"'{ans}' is wrong answer ;(. Correct answer were '{r}'.")
+                print(f"Let's try again, {name}!")
                 break
         if znak == '*':
-            real = str(x * y)
-            if real == answer:
+            r = str(x * y)
+            if r == ans:
                 print('Correct!')
                 i += 1
             else:
-                print(f"'{answer}' is wrong answer ;(. Correct answer were '{real}'.\nLet's try again, {name}!")
+                print(f"'{ans}' is wrong answer ;(. Correct answer were '{r}'.")
+                print(f"Let's try again, {name}!")
                 break
-        
         if i > 3:
             print(f'Congratulations, {name}!')
 
