@@ -40,3 +40,7 @@ installation with asciinema.org account by opening the following link:
 
 
 https://asciinema.org/a/M3FjSplomqxgF8Lcy5qMxNeyi
+
+    https://asciinema.org/a/SWSC1y2uwZEAgNzWm4sw3cU1e
+
+
