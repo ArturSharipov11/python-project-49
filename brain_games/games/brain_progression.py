@@ -18,3 +18,4 @@ def question_and_answer():
     string = ' '.join(string)
     question = string
     answer = str(num)
+    return question, str(answer)
