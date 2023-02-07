@@ -10,5 +10,4 @@ def question_and_answer():
         answer = 'yes'
     elif r % 2 == 1:
         answer = 'no'
-    else:
-        break
+    return question, str(answer)
