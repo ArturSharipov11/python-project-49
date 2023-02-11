@@ -1,37 +1,38 @@
+Описание
+«Игры разума» — набор из пяти консольных игр, построенных по принципу популярных мобильных приложений для прокачки мозга. Каждая игра задает вопросы, на которые нужно дать правильные ответы. После трех правильных ответов считается, что игра пройдена. Неправильные ответы завершают игру и предлагают пройти ее заново. 
+
+Игры:
+Калькулятор. Арифметические выражения, которые необходимо вычислить.
+Прогрессия. Поиск пропущенных чисел в последовательности чисел.
+Определение четного числа.
+Определение наибольшего общего делителя.
+Определение простого числа.
+
+Инструкция по установке:
+make build - сборка проекта
+make package-install - установка с помощью pip в пользовательское окружение
+
+Доступные команды после установки:
+brain-even - Определение четного числа
+brain-calc - Калькулятор
+brain-gcd - Определение наибольшего общего делителя
+brain-progression - Поиск пропущенных чисел в последовательности
+brain-prime - Определение простого числа
+
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/ArturSharipov11/python-project-49/workflows/hexlet-check/badge.svg)](https://github.com/ArturSharipov11/python-project-49/actions)
 
 <a href="https://codeclimate.com/github/ArturSharipov11/python-project-49/maintainability"><img src="https://api.codeclimate.com/v1/badges/975929a16474c6bf15fb/maintainability" /></a>
 
 
-    https://asciinema.org/a/9zEicWaA24mPMkAH16DOhpKyz
-
-This installation of asciinema recorder hasn't been linked to any asciinema.org
-account. All unclaimed recordings (from unknown installations like this one)
-are automatically archived 7 days after upload.
-
-If you want to preserve all recordings made on this machine, connect this
-installation with asciinema.org account by opening the following link:
-
-    https://asciinema.org/connect/04584070-aa8b-497c-acdb-36d08cc4a542
-
-
-View the recording at:
-
-    https://asciinema.org/a/06an2umQGSd6Ox0uROFpY9BRX
-
-This installation of asciinema recorder hasn't been linked to any asciinema.org
-account. All unclaimed recordings (from unknown installations like this one)
-are automatically archived 7 days after upload.
-
-If you want to preserve all recordings made on this machine, connect this
-installation with asciinema.org account by opening the following link:
-
-    https://asciinema.org/connect/04584070-aa8b-497c-acdb-36d08cc4a542
-
-
-https://asciinema.org/a/M3FjSplomqxgF8Lcy5qMxNeyi
-
-    https://asciinema.org/a/SWSC1y2uwZEAgNzWm4sw3cU1e
-
-
+ Аскинема игр:
+ 
+     https://asciinema.org/a/qcy65wOXcxHDIKGU5JnWbfmyd
+     
+     https://asciinema.org/a/NvR4pG6mOUoGwd0Cyt9PTzVaR
+     
+     https://asciinema.org/a/iZqK0oWgdj0dOTFXvS1B2u9BD
+     
+     https://asciinema.org/a/xCoDrA8DcZnaEY4v5jOtVEpIg
+     
+     https://asciinema.org/a/tWpApH7F9o7P5eiFV7laMjWGL
