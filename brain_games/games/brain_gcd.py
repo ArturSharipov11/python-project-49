@@ -1,16 +1,22 @@
 from random import randint
 
 
+from brain_games.engine import MIN_VALUE, MAX_VALUE
+
+
 import math
 
 
-rules = 'Find the greatest common divisor of given numbers.'
+RULES = 'Find the greatest common divisor of given numbers.'
 
 
-def question_and_answer():
-    x = randint(1, 100)
-    y = randint(1, 100)
-    question = f'{x} {y}'
-    b = math.gcd(x, y)
-    answer = str(b)
-    return question, str(answer)
+def get_question_and_answer():
+    rand1 = randint(MIN_VALUE, MAX_VALUE)
+    rand2 = randint(MIN_VALUE, MAX_VALUE)
+    question_and_answer = (f'{rand1} {rand2}', str(get_gcd(rand1, rand2)))
+    return question_and_answer
+
+
+def get_gcd(num1, num2):
+    yeah = math.gcd(num1, num2)
+    return yeah

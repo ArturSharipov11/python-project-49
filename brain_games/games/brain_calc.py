@@ -8,16 +8,17 @@ RULES = 'What is the result of the expression?'
 
 
 def get_question_and_answer():
-    random1 = randint(MIN_VALUE, MAX_VALUE)
-    random2 = randint(MIN_VALUE, MAX_VALUE)
+    ran1 = randint(MIN_VALUE, MAX_VALUE)
+    ran2 = randint(MIN_VALUE, MAX_VALUE)
     oper = choice(['+', '*', '-'])
-    if oper == '+':
-        question = f'{random1} + {random2}'
-        answer = random1 + random2
-    elif oper == '-':
-        question = f'{random1} - {random2}'
-        answer = random1 - random2
-    elif oper == '*':
-        question = f'{random1} * {random2}'
-        answer = random1 * random2
-    return question, str(answer)
+    question_and_answer = (f'{ran1} {oper} {ran2}', get_calc(ran1, oper, ran2))
+    return question_and_answer
+
+
+def get_calc(num1, opeer, num2):
+    if opeer == '+':
+        return str(num1 + num2)
+    elif opeer == '-':
+        return str(num1 - num2)
+    elif opeer == '*':
+        return str(num1 * num2)

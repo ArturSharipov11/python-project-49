@@ -14,7 +14,7 @@ def get_question_and_answer():
     int_term = randint(MIN_VALUE, MAX_VALUE)
     number_of_term = randint(MIN_LENGTH, MAX_LENGTH)
     difference = randint(2, DIFFERENCE)
-    string = get_string(int_term, difference, number_of_term) 
+    string = get_string(int_term, difference, number_of_term)
     num = choice(string)
     index_num = string.index(num)
     string[index_num] = '..'
@@ -25,7 +25,7 @@ def get_question_and_answer():
 
 
 def get_string(int_term, difference, number_of_term):
-    last_char = int_term +  difference * number_of_term
+    last_char = int_term + difference * number_of_term
     crowd = []
     for i in range(int_term, last_char, difference):
         crowd.append(str(i))
