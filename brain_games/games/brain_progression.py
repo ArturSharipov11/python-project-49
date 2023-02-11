@@ -1,17 +1,20 @@
 from random import randint, choice
 
 
-rules = 'What number is missing in the progression?'
+from brain_games.engine import MIN_VALUE, MAX_VALUE
 
 
-def question_and_answer():
-    string = []
-    x = randint(5, 10)
-    y = randint(1, 20)
-    a = randint(2, 7)
-    stop = y + (x * a)
-    for i in range(y, stop, a):
-        string.append(str(i))
+MIN_LENGTH = 5
+MAX_LENGTH = 10
+DIFFERENCE = 10
+RULES = 'What number is missing in the progression?'
+
+
+def get_question_and_answer():
+    int_term = randint(MIN_VALUE, MAX_VALUE)
+    number_of_term = randint(MIN_LENGTH, MAX_LENGTH)
+    difference = randint(2, DIFFERENCE)
+    string = get_string(int_term, difference, number_of_term) 
     num = choice(string)
     index_num = string.index(num)
     string[index_num] = '..'
@@ -19,3 +22,11 @@ def question_and_answer():
     question = string
     answer = str(num)
     return question, str(answer)
+
+
+def get_string(int_term, difference, number_of_term):
+    last_char = int_term +  difference * number_of_term
+    crowd = []
+    for i in range(int_term, last_char, difference):
+        crowd.append(str(i))
+    return crowd

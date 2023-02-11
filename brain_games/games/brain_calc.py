@@ -1,12 +1,15 @@
 from random import randint, choice
 
 
-rules = 'What is the result of the expression?'
+from brain_games.engine import MAX_VALUE, MIN_VALUE
 
 
-def question_and_answer():
-    random1 = randint(1, 50)
-    random2 = randint(1, 60)
+RULES = 'What is the result of the expression?'
+
+
+def get_question_and_answer():
+    random1 = randint(MIN_VALUE, MAX_VALUE)
+    random2 = randint(MIN_VALUE, MAX_VALUE)
     oper = choice(['+', '*', '-'])
     if oper == '+':
         question = f'{random1} + {random2}'
