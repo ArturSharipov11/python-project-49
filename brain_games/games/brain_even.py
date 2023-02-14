@@ -1,14 +1,15 @@
 from random import randint
 
 
-from brain_games.engine import MIN_VALUE, MAX_VALUE
+EVEN_MIN_VALUE = 1
+EVEN_MAX_VALUE = 111
 
 
 RULES = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def get_question_and_answer():
-    rand = randint(MIN_VALUE, MAX_VALUE)
+    rand = randint(EVEN_MIN_VALUE, EVEN_MAX_VALUE)
     question_and_answer = (rand, is_even(rand) and 'yes' or 'no')
     return question_and_answer
 

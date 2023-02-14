@@ -2,7 +2,7 @@ import prompt
 
 
 ROUNDS = 3
-MAX_VALUE = 100
+MAX_VALUE = 10000
 MIN_VALUE = 1
 
 
