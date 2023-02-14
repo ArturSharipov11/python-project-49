@@ -1,15 +1,16 @@
 from random import randint, choice
 
 
-from brain_games.engine import MAX_VALUE, MIN_VALUE
+CALC_MIN_VALUE = 1
+CALC_MAX_VALUE = 1000
 
 
 RULES = 'What is the result of the expression?'
 
 
 def get_question_and_answer():
-    ran1 = randint(MIN_VALUE, MAX_VALUE)
-    ran2 = randint(MIN_VALUE, MAX_VALUE)
+    ran1 = randint(CALC_MIN_VALUE, CALC_MAX_VALUE)
+    ran2 = randint(CALC_MIN_VALUE, CALC_MAX_VALUE)
     oper = choice(['+', '*', '-'])
     question_and_answer = (f'{ran1} {oper} {ran2}', get_calc(ran1, oper, ran2))
     return question_and_answer

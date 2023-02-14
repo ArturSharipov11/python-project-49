@@ -12,11 +12,9 @@ def get_question_and_answer():
 
 
 def is_prime(num):
-    count = 0
-    for i in range(1, num + 1):
-        if num % i == 0:
-            count += 1
-    if count == 2:
-        return 'yes'
-    elif count != 2:
+    if num <= 1:
         return 'no'
+    for i in range(2, num // 2):
+        if num % i == 0:
+            return 'no'
+    return 'yes'
