@@ -12,14 +12,14 @@ def get_question_and_answer():
     ran1 = randint(CALC_MIN_VALUE, CALC_MAX_VALUE)
     ran2 = randint(CALC_MIN_VALUE, CALC_MAX_VALUE)
     oper = choice(['+', '*', '-'])
-    question_and_answer = (f'{ran1} {oper} {ran2}', get_calc(ran1, oper, ran2))
+    question_and_answer = (f'{ran1} {oper} {ran2}', str(get_calc(ran1, oper, ran2)))
     return question_and_answer
 
 
 def get_calc(num1, opeer, num2):
     if opeer == '+':
-        return str(num1 + num2)
+        return (num1 + num2)
     elif opeer == '-':
-        return str(num1 - num2)
+        return (num1 - num2)
     elif opeer == '*':
-        return str(num1 * num2)
+        return (num1 * num2)
