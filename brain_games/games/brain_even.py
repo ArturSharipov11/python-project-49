@@ -10,7 +10,8 @@ RULES = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 def get_question_and_answer():
     rand = randint(EVEN_MIN_VALUE, EVEN_MAX_VALUE)
-    question_and_answer = (rand, 'yes' if is_even(rand) else 'no')
+    answer = 'yes' if is_even(rand) else 'no'
+    question_and_answer = (rand, answer)
     return question_and_answer
 
 
