@@ -18,9 +18,8 @@ def get_question_and_answer():
     index_num = string.index(num)
     string[index_num] = '..'
     string = ' '.join(string)
-    question = string
-    answer = str(num)
-    return question, str(answer)
+    question_and_answer = (string, str(num))
+    return question_and_answer
 
 
 def get_string(int_term, difference, number_of_term):

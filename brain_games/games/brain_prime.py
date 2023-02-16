@@ -8,7 +8,7 @@ RULES = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 def get_question_and_answer():
     ran = randint(PRIME_MIN_VALUE, PRIME_MAX_VALUE)
-    question_and_answer = (ran, is_prime(ran) and 'yes' or 'no')
+    question_and_answer = (ran, 'yes' if is_prime(ran) else 'no')
     return question_and_answer
 
 
